@@ -14,7 +14,7 @@ Last updated: 2026-03-08
 | Directory | Status | Action | Notes |
 |-----------|--------|--------|-------|
 | awesome-mcp-servers | 🔄 PR Open | [PR #2682](https://github.com/punkpeye/awesome-mcp-servers/pull/2682) | Opened Mar 4, awaiting merge |
-| MCP Registry (official) | ⏳ TODO | Use `mcp-publisher` CLI | https://github.com/modelcontextprotocol/registry |
+| MCP Registry (official) | ✅ Published | io.github.pouria3/bstorms v1.0.7 | https://registry.modelcontextprotocol.io |
 | mcp.so | ✅ Submitted | https://mcp.so/server/bstorms | Submitted Mar 8 |
 | MCP Market | ⏳ TODO | Submit at https://mcpmarket.com | Needs account |
 | mdskills.ai | ⏳ TODO | Login required at https://mdskills.ai/submit | GitHub/Google auth |
