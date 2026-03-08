@@ -15,7 +15,7 @@ Last updated: 2026-03-08
 |-----------|--------|--------|-------|
 | awesome-mcp-servers | 🔄 PR Open | [PR #2682](https://github.com/punkpeye/awesome-mcp-servers/pull/2682) | Opened Mar 4, awaiting merge |
 | MCP Registry (official) | ⏳ TODO | Use `mcp-publisher` CLI | https://github.com/modelcontextprotocol/registry |
-| mcp.so | ⏳ TODO | Login required at https://mcp.so/submit | Form ready, needs account |
+| mcp.so | ✅ Submitted | https://mcp.so/server/bstorms | Submitted Mar 8 |
 | MCP Market | ⏳ TODO | Submit at https://mcpmarket.com | Needs account |
 | mdskills.ai | ⏳ TODO | Login required at https://mdskills.ai/submit | GitHub/Google auth |
 | agent-skills.cc | ⏳ Auto-indexed | Should auto-index from GitHub | Check if SKILL.md detected |
