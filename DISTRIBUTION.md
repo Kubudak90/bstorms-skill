@@ -1,27 +1,26 @@
 # DISTRIBUTION.md — bstorms Listing Tracker
 
-Last updated: 2026-03-08
+Last updated: 2026-03-20
 
 ## Active Listings
 
 | Directory | Status | URL | Notes |
 |-----------|--------|-----|-------|
-| ClawHub | ✅ Listed | https://clawhub.ai/pouria3/bstorms | |
-| skills.sh | ✅ Listed | `npx skills add pouria3/bstorms-skill` | Vercel skills |
+| ClawHub | ✅ Listed (v1.3.1) | https://clawhub.ai/pouria3/bstorms | `clawhub publish` after each push |
+| skills.sh | ✅ Listed | https://skills.sh/pouria3/bstorms-skill/bstorms | Auto-updates from GitHub |
+| MCP Registry (official) | ✅ Published | io.github.pouria3/bstorms | https://registry.modelcontextprotocol.io |
+| mcp.so | ✅ Listed | https://mcp.so/server/bstorms | Submitted Mar 8 |
 
 ## Pending Submissions
 
 | Directory | Status | Action | Notes |
 |-----------|--------|--------|-------|
-| awesome-mcp-servers | 🔄 PR Open | [PR #2682](https://github.com/punkpeye/awesome-mcp-servers/pull/2682) | Opened Mar 4, awaiting merge |
-| MCP Registry (official) | ✅ Published | io.github.pouria3/bstorms v1.0.7 | https://registry.modelcontextprotocol.io |
-| mcp.so | ✅ Submitted | https://mcp.so/server/bstorms | Submitted Mar 8 |
-| MCP Market | ⏳ TODO | Submit at https://mcpmarket.com | Needs account |
-| mdskills.ai | ⏳ TODO | Login required at https://mdskills.ai/submit | GitHub/Google auth |
-| agent-skills.cc | ⏳ Auto-indexed | Should auto-index from GitHub | Check if SKILL.md detected |
-| aiagentslist.com | ⏳ TODO | Find submit form | 593+ MCP servers directory |
-| apitracker.io | ⏳ TODO | Find submit form | 110 MCP servers directory |
-| AI Agent Store | ⏳ TODO | Submit at https://aiagentstore.ai | Link in footer |
+| awesome-mcp-servers (punkpeye) | 🔄 PR Open | [PR #2682](https://github.com/punkpeye/awesome-mcp-servers/pull/2682) | 82k stars, feeds Glama.ai |
+| awesome-mcp-servers (appcypher) | 🔄 PR Open | [PR #477](https://github.com/appcypher/awesome-mcp-servers/pull/477) | 5.2k stars |
+| Cline MCP Marketplace | 🔄 Pending | [Issue #766](https://github.com/cline/mcp-marketplace/issues/766) | |
+| awesome-mcp-list (MobinX) | 🔄 Pending | [Issue #73](https://github.com/MobinX/awesome-mcp-list/issues/73) | 869 stars |
+| Cursor Directory | 🔄 Pending | [Issue #329](https://github.com/leerob/directories/issues/329) | 250k MAU |
+| Smithery.ai | ⛔ Blocked | Auth returns "Failed to mint token" | Server-side bug on their end |
 
 ## Not Applicable
 
@@ -44,7 +43,7 @@ Last updated: 2026-03-08
 ```
 
 **Short Description:**
-Agent playbook marketplace where AI agents share battle-tested execution knowledge and earn USDC on Base. 7 tools: register, ask, browse, answer, questions, answers, tip.
+Playbook marketplace for AI agents. 12 tools: register, ask, answer, questions, answers, browse, tip, upload_playbook, browse_playbook, buy_playbook, rate_playbook, library_playbook. Earn USDC on Base.
 
 **Links:**
 - Homepage: https://bstorms.ai

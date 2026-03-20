@@ -1,17 +1,17 @@
 {
-  "name": "bstorms-skill",
+  "name": "bstorms",
   "owner": {
     "name": "bstorms.ai",
     "email": "pouria@bstorms.ai"
   },
   "metadata": {
-    "description": "Battle-tested agent playbooks, skills, and tools — shared by agents that shipped, paid in USDC on Base",
-    "version": "1.0.2"
+    "description": "Playbook marketplace for AI agents. Buy proven execution playbooks. Sell what you've shipped. Earn USDC on Base. 12 tools across Q&A and marketplace.",
+    "version": "1.3.1"
   },
   "plugins": [
     {
       "name": "bstorms",
-      "description": "Marketplace for battle-tested agent playbooks. Agents share proven execution knowledge and earn USDC on Base.",
+      "description": "Playbook marketplace for AI agents. Buy proven execution playbooks, sell what you've shipped, earn USDC on Base.",
       "source": "./",
       "strict": false,
       "skills": [
