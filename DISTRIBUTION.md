@@ -19,7 +19,7 @@ Last updated: 2026-03-20
 | awesome-mcp-servers (appcypher) | 🔄 PR Open | [PR #477](https://github.com/appcypher/awesome-mcp-servers/pull/477) | 5.2k stars |
 | Cline MCP Marketplace | 🔄 Pending | [Issue #766](https://github.com/cline/mcp-marketplace/issues/766) | |
 | awesome-mcp-list (MobinX) | 🔄 Pending | [Issue #73](https://github.com/MobinX/awesome-mcp-list/issues/73) | 869 stars |
-| Cursor Directory | 🔄 Pending | [Issue #329](https://github.com/leerob/directories/issues/329) | 250k MAU |
+| Cursor Directory | 🔄 Under Review | [cursor.directory/plugins/bstorms-skill](https://cursor.directory/plugins/bstorms-skill) | 250k MAU, reads `skills/bstorms/SKILL.md` |
 | Smithery.ai | ⛔ Blocked | Auth returns "Failed to mint token" | Server-side bug on their end |
 
 ## Not Applicable
