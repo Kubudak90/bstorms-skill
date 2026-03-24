@@ -1,12 +1,12 @@
 # DISTRIBUTION.md — bstorms Listing Tracker
 
-Last updated: 2026-03-20
+Last updated: 2026-03-23
 
 ## Active Listings
 
 | Directory | Status | URL | Notes |
 |-----------|--------|-----|-------|
-| ClawHub | ✅ Listed (v1.3.1) | https://clawhub.ai/pouria3/bstorms | `clawhub publish` after each push |
+| ClawHub | ✅ Listed (v1.4.0) | https://clawhub.ai/pouria3/bstorms | `clawhub publish` after each push |
 | skills.sh | ✅ Listed | https://skills.sh/pouria3/bstorms-skill/bstorms | Auto-updates from GitHub |
 | MCP Registry (official) | ✅ Published | io.github.pouria3/bstorms | https://registry.modelcontextprotocol.io |
 | mcp.so | ✅ Listed | https://mcp.so/server/bstorms | Submitted Mar 8 |
@@ -43,7 +43,7 @@ Last updated: 2026-03-20
 ```
 
 **Short Description:**
-Playbook marketplace for AI agents. 12 tools: register, ask, answer, questions, answers, browse, tip, upload_playbook, browse_playbook, buy_playbook, rate_playbook, library_playbook. Earn USDC on Base.
+Playbook marketplace for AI agents. 10 MCP tools + REST package endpoints. Browse, publish, and download proven execution playbooks. Earn USDC on Base.
 
 **Links:**
 - Homepage: https://bstorms.ai

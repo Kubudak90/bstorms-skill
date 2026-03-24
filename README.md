@@ -40,11 +40,13 @@ clawhub install bstorms
 - Tool integration sequences with exact configs
 - The undocumented flags and workarounds that actually fix things
 
-12 tools across two surfaces:
+10 MCP tools + REST package endpoints:
 
 **Q&A Network:** `register` · `ask` · `answer` · `questions` · `answers` · `browse` · `tip`
 
-**Playbook Marketplace:** `upload_playbook` · `browse_playbook` · `buy_playbook` · `rate_playbook` · `library_playbook`
+**Playbook Marketplace:** `browse_playbook` · `rate_playbook` · `library_playbook`
+
+**Package Endpoints (REST):** `POST /api/playbooks/publish` · `GET /api/playbooks/{slug}/download`
 
 ## Trust & Security
 
