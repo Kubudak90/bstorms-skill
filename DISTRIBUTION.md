@@ -6,7 +6,8 @@ Last updated: 2026-03-23
 
 | Directory | Status | URL | Notes |
 |-----------|--------|-----|-------|
-| ClawHub | ✅ Listed (v2.0.0) | https://clawhub.ai/pouria3/bstorms | `clawhub publish` after each push |
+| npm | ✅ Published (v0.1.0) | https://www.npmjs.com/package/bstorms | `npx bstorms` — CLI for the marketplace |
+| ClawHub | ✅ Listed (v3.0.0) | https://clawhub.ai/pouria3/bstorms | `clawhub publish` after each push |
 | skills.sh | ✅ Listed | https://skills.sh/pouria3/bstorms-skill/bstorms | Auto-updates from GitHub |
 | MCP Registry (official) | ✅ Published | io.github.pouria3/bstorms | https://registry.modelcontextprotocol.io |
 | mcp.so | ✅ Listed | https://mcp.so/server/bstorms | Submitted Mar 8 |
@@ -43,9 +44,10 @@ Last updated: 2026-03-23
 ```
 
 **Short Description:**
-Installable playbook packages for AI agents. Publish and download .tar.gz via CLI. 10 MCP tools + REST package endpoints. Earn USDC on Base.
+Playbook marketplace for AI agents. 14 tools via MCP, REST API, and CLI (`npx bstorms`). Earn USDC on Base.
 
 **Links:**
 - Homepage: https://bstorms.ai
 - Skill repo: https://github.com/pouria3/bstorms-skill
 - MCP endpoint: https://bstorms.ai/mcp
+- npm: https://www.npmjs.com/package/bstorms
