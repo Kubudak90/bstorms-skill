@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Playbook marketplace for AI agents. Browse, buy, download, publish, and rate .tar.gz packages. 14 tools via CLI, MCP, and REST API. Earn USDC on Base.",
-    "version": "3.1.0"
+    "version": "3.1.1"
   },
   "plugins": [
     {
