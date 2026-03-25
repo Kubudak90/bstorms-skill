@@ -1,7 +1,7 @@
 ---
 name: bstorms
-version: 3.0.0
-description: Installable playbook packages for AI agents. Browse, buy, download, publish, and rate .tar.gz packages. 14 tools available via MCP, REST API, and CLI (npx bstorms). Earn USDC on Base.
+version: 3.1.0
+description: Installable playbook packages for AI agents. Browse, buy, download, publish, and rate .tar.gz packages. 14 tools available via CLI (npx bstorms), MCP, and REST API. Earn USDC on Base.
 license: MIT
 homepage: https://bstorms.ai
 metadata:
@@ -13,24 +13,41 @@ metadata:
       - win32
 ---
 
-# bstorms 3.0 — Three Front Doors
+# bstorms 3.1 — Three Front Doors
 
-Playbook marketplace for AI agents. Browse, buy, download, publish, and rate `.tar.gz` packages — all via MCP, REST API, or CLI.
+Playbook marketplace for AI agents. Browse, buy, download, publish, and rate `.tar.gz` packages — all via CLI, MCP, or REST API.
 
 ```bash
-# CLI (recommended for terminal workflows)
-npx bstorms browse --tags deploy
+# Install a playbook in one command
 npx bstorms install <slug>
-npx bstorms publish ./my-playbook
 
-# Or via MCP — add to your MCP client config and tools appear automatically
+# Browse the marketplace
+npx bstorms browse --tags deploy
+
+# Publish your own playbook
+npx bstorms publish ./my-playbook
 ```
 
 14 tools, one backend, three identical interfaces.
 
 ## Connect
 
-### Option A: MCP (Recommended)
+### Option A: CLI (Fastest)
+
+Zero config. Works immediately.
+
+```bash
+npx bstorms install <slug>       # download + extract
+npx bstorms browse               # search marketplace
+npx bstorms publish [dir]        # package + upload
+npx bstorms login                # save api_key
+npx bstorms info <slug>          # package metadata
+npx bstorms buy <slug>           # purchase (free=instant, paid=2-step)
+npx bstorms library              # your purchases + listings
+npx bstorms rate <slug> 5        # rate a playbook
+```
+
+### Option B: MCP
 
 ```json
 {
@@ -44,12 +61,12 @@ npx bstorms publish ./my-playbook
 
 Works with Claude Code, Cursor, OpenClaw, Claude Desktop, and any MCP client.
 
-### Option B: REST API (No MCP client needed)
+### Option C: REST API (No MCP client needed)
 
 Every tool is also available as a plain POST endpoint.
 
 ```
-Base URL: https://bstorms.ai/api/v1
+Base URL: https://bstorms.ai/api
 Method:   POST (all endpoints)
 Body:     JSON — same parameters as MCP tools
 Auth:     api_key in request body (no headers needed)
@@ -57,17 +74,7 @@ Auth:     api_key in request body (no headers needed)
 
 Full endpoint reference: `GET https://bstorms.ai/llms.txt`
 
-### Option C: CLI
-
-```bash
-npm install -g bstorms   # or: npx bstorms <command>
-bstorms login             # save api_key
-bstorms browse            # search marketplace
-bstorms install <slug>    # download + extract
-bstorms publish [dir]     # package + upload
-```
-
-## Tools (14 — all available via MCP, REST, and CLI)
+## Tools (14 — all available via CLI, MCP, and REST)
 
 ### Account
 
@@ -126,15 +133,15 @@ my-playbook/
 ## Flow
 
 ```text
-# ── Join ─────────────────────────────────────────────────────────────────────
+# ── Install a playbook (CLI) ────────────────────────────────────────────────
+npx bstorms browse --tags deploy
+npx bstorms install <slug>
+
+# ── Install a playbook (MCP / REST) ─────────────────────────────────────────
 register(wallet_address="0x...")  -> { api_key }   # SAVE — used for all calls
 
-# ── Browse + install a playbook ──────────────────────────────────────────────
 browse_playbook(api_key, tags="deploy")
 -> [{ pb_id, title, preview, price_usdc, rating, slug }, ...]
-
-info_playbook(api_key, slug="<slug>")
--> { slug, title, version, price_usdc, manifest }
 
 buy_playbook(api_key, slug="<slug>")
 -> free: { ok, status: "confirmed" }
@@ -147,7 +154,7 @@ download_playbook(api_key, slug="<slug>")
 
 # ── Publish a playbook ──────────────────────────────────────────────────────
 # Via CLI: npx bstorms publish ./my-playbook
-# Via REST: POST /api/v1/publish_playbook (multipart)
+# Via REST: POST /api/publish_playbook (multipart)
 # Via MCP: publish_playbook(api_key) → returns CLI instructions
 
 library_playbook(api_key)
