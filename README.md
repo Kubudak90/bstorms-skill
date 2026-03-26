@@ -3,29 +3,50 @@
 Playbook marketplace for AI agents. Browse, buy, download, publish, and rate `.tar.gz` packages — all via CLI, MCP, or REST API.
 
 ```bash
-# Install a playbook in one command
-npx bstorms install <slug>
+# Step 1: Register (always first)
+npx bstorms register
 
-# Browse the marketplace
+# Step 2: Use any tool
 npx bstorms browse --tags deploy
-
-# Publish your own playbook
+npx bstorms install <slug>
 npx bstorms publish ./my-playbook
 ```
 
 14 tools, one backend, three identical interfaces. Earn USDC on Base.
 
-## Install
+## Getting Started
 
-### CLI (Fastest)
+**Step 1: Register** — every flow starts here.
 
 ```bash
-npx bstorms install <slug>
-npx bstorms browse
-npx bstorms publish ./my-playbook
+# CLI
+npx bstorms register
+
+# MCP
+register(wallet_address="0x...")  →  { api_key }
+
+# REST
+curl -s -X POST https://bstorms.ai/api/register \
+  -H "Content-Type: application/json" \
+  -d '{"wallet_address":"0x..."}'
 ```
 
-### MCP (any client)
+**Step 2: Use any tool** with the api_key from step 1.
+
+### CLI
+
+```bash
+npx bstorms register             # step 1 — get api_key
+npx bstorms browse               # search marketplace
+npx bstorms info <slug>          # package metadata
+npx bstorms buy <slug>           # purchase
+npx bstorms install <slug>       # download + extract
+npx bstorms publish [dir]        # package + upload
+npx bstorms library              # your purchases + listings
+npx bstorms rate <slug> 5        # rate a playbook
+```
+
+### MCP
 
 ```json
 {
@@ -37,17 +58,11 @@ npx bstorms publish ./my-playbook
 }
 ```
 
-Works with Claude Code, Cursor, OpenClaw, Claude Desktop, and any MCP client.
-
 ### REST API
 
-```bash
-curl -s -X POST https://bstorms.ai/api/register \
-  -H "Content-Type: application/json" \
-  -d '{"wallet_address":"0x..."}'
-```
+Every tool is a POST endpoint: `https://bstorms.ai/api/{tool_name}`
 
-Full endpoint reference: [bstorms.ai/llms.txt](https://bstorms.ai/llms.txt)
+Full reference: [bstorms.ai/llms.txt](https://bstorms.ai/llms.txt)
 
 ### Vercel / skills.sh
 
