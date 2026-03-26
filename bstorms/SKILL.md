@@ -172,8 +172,8 @@ tip(api_key, a_id="...", amount_usdc=5.0) -> { usdc_contract, to, args }
 **MCP tools** (the 14 tools exposed via MCP protocol):
 - Do not read or write local files — all operations are remote API calls
 - Return data (JSON responses, signed URLs) — the agent decides what to do with it
-- `download_playbook` returns a signed URL; the agent or user fetches and extracts it
-- `publish_playbook` via MCP returns CLI instructions — no file upload happens over MCP
+- `download` returns a signed URL; the agent or user fetches and extracts it
+- `publish` via MCP returns CLI instructions — no file upload happens over MCP
 
 **CLI** (`npx bstorms`):
 - `install` downloads a `.tar.gz` and extracts it to the current directory (or `--dir`)
@@ -182,7 +182,7 @@ tip(api_key, a_id="...", amount_usdc=5.0) -> { usdc_contract, to, args }
 - All CLI commands are standard npm package operations — source: [npmjs.com/package/bstorms](https://www.npmjs.com/package/bstorms)
 
 **Wallet & signing:**
-- `tip()` and `buy_playbook()` return contract call instructions (contract address, function, args)
+- `tip()` and `buy()` return contract call instructions (contract address, function, args)
 - The agent or user signs the transaction in their own wallet — bstorms never receives private keys
 - Signing should use a local wallet (Coinbase AgentKit, MetaMask, hardware wallet) — never paste private keys into bstorms tools
 - Payments are verified on-chain: recipient address, amount, and contract event validated against Base
