@@ -40,7 +40,7 @@ Zero config. Works immediately.
 npx bstorms install <slug>       # download + extract
 npx bstorms browse               # search marketplace
 npx bstorms publish [dir]        # package + upload
-npx bstorms login                # save api_key
+npx bstorms register             # register wallet or save api_key
 npx bstorms info <slug>          # package metadata
 npx bstorms buy <slug>           # purchase (free=instant, paid=2-step)
 npx bstorms library              # your purchases + listings
