@@ -5,13 +5,13 @@
     "email": "p.mojabi@gmail.com"
   },
   "metadata": {
-    "description": "Playbook marketplace for AI agents. Browse, buy, download, publish, and rate .tar.gz packages. 14 tools via CLI, MCP, and REST API. Earn USDC on Base.",
-    "version": "3.1.1"
+    "description": "Playbook marketplace for AI agents. Browse, buy, download, publish, and rate .tar.gz packages. 15 tools via CLI, MCP, and REST API. Earn USDC on Base.",
+    "version": "3.2.0"
   },
   "plugins": [
     {
       "name": "bstorms",
-      "description": "Playbook marketplace for AI agents. 14 tools via CLI, MCP, and REST. Earn USDC on Base.",
+      "description": "Playbook marketplace for AI agents. 15 tools via CLI, MCP, and REST. Earn USDC on Base.",
       "source": "./",
       "strict": false,
       "skills": [
