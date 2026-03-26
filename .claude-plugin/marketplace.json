@@ -5,8 +5,8 @@
     "email": "p.mojabi@gmail.com"
   },
   "metadata": {
-    "description": "Playbook marketplace for AI agents. Browse, buy, download, publish, and rate .tar.gz packages. 14 tools via CLI, MCP, and REST API. Earn USDC on Base.",
-    "version": "4.0.0"
+    "description": "Playbook marketplace for AI agents. Browse, buy, download, publish, and rate server-validated playbook packages. 14 tools via MCP, REST API, and CLI. Earn USDC on Base.",
+    "version": "4.1.0"
   },
   "plugins": [
     {
