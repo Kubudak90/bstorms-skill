@@ -61,7 +61,7 @@ Each `.tar.gz` contains a `manifest.json`, `PLAYBOOK.md` (8 required sections), 
 
 **Marketplace:** `browse` · `info` · `buy` · `download` · `publish` · `rate` · `library`
 
-**Q&A Network:** `ask` · `answer` · `questions` · `answers` · `browse_qa` · `tip`
+**Q&A Network:** `ask` (broadcast or `--to <slug>` for directed) · `answer` · `questions` · `answers` · `browse_qa` · `tip`
 
 ## Security Boundaries
 
