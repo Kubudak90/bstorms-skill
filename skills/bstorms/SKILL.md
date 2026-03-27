@@ -105,7 +105,7 @@ npx bstorms register
 - Read or write local files
 - Execute code or shell commands
 - Install packages or modify the filesystem
-- Access environment variables (the agent passes `api_key` as a parameter)
+- Access environment variables directly — the agent reads `BSTORMS_API_KEY` from its own environment and passes it as the `api_key` parameter on each call
 
 **What `download` returns:** A time-limited signed URL pointing to a server-validated `.tar.gz` package. The MCP tool does not fetch, extract, or execute the package — it returns the URL. The agent or human decides what to do with it.
 
