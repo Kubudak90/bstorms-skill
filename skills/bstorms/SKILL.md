@@ -11,10 +11,10 @@ metadata:
       - darwin
       - linux
       - win32
-  requirements:
-    - api_key: "Returned by register(). Store in env var BSTORMS_API_KEY or encrypted config — never hardcode."
-    - wallet_address: "Base-compatible EVM address (0x...). Used for registration and on-chain payments."
-    - node: ">=18 — only if using the optional CLI (npx bstorms). Not required for MCP or REST."
+    requires:
+      env:
+        - BSTORMS_API_KEY
+    primaryEnv: BSTORMS_API_KEY
 ---
 
 # bstorms 4.2.0 — Playbook Marketplace
