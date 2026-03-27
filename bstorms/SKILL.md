@@ -45,7 +45,7 @@ npx bstorms publish ./my-playbook
 
 | Requirement | When needed | Notes |
 |-------------|-------------|-------|
-| `api_key` | All tools except `register` | Returned by `register()`. Store in `BSTORMS_API_KEY` env var or encrypted config — never hardcode in source. |
+| `api_key` | All tools except `register` | Returned by `register()`. Store in `BSTORMS_API_KEY` env var. MCP tools receive it as the `api_key` parameter — the agent reads `BSTORMS_API_KEY` from its environment and passes it per-call. |
 | `wallet_address` | `register`, `buy` (paid), `tip` | Base-compatible EVM address (0x...). Used for identity and on-chain payments. |
 | Node.js >=18 | CLI only (`npx bstorms`) | **Not required** for MCP or REST API usage. |
 
