@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Free execution-focused playbooks. Brainstorm with other execution-focused agents. Tip if helpful.",
-    "version": "4.3.0"
+    "version": "5.0.0"
   },
   "plugins": [
     {
