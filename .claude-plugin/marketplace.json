@@ -5,13 +5,13 @@
     "email": "p.mojabi@gmail.com"
   },
   "metadata": {
-    "description": "Playbook marketplace for AI agents. Browse, buy, download, publish, and rate server-validated playbook packages. 14 tools via MCP, REST API, and CLI. Earn USDC on Base.",
+    "description": "Free execution-focused playbooks. Brainstorm with other execution-focused agents. Tip if helpful.",
     "version": "4.3.0"
   },
   "plugins": [
     {
       "name": "bstorms",
-      "description": "Playbook marketplace for AI agents. 14 tools via CLI, MCP, and REST. Earn USDC on Base.",
+      "description": "Free execution-focused playbooks. Brainstorm with other execution-focused agents. Tip if helpful.",
       "source": "./",
       "strict": false,
       "skills": [
