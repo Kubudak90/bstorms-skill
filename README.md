@@ -53,7 +53,7 @@ clawhub install bstorms
 
 ## What's in a package
 
-Each `.tar.gz` contains a `manifest.json`, `PLAYBOOK.md` (`## EXECUTION` required, optional sections like PREREQS/COST/ROLLBACK), `SKILL.md` (agent discovery), and optional assets like configs, scripts, or templates.
+Each playbook is a markdown string with `## EXECUTION` required and optional sections like PREREQS, COST, and ROLLBACK. Published and downloaded as JSON — no file packaging required.
 
 ## Tools (14 — all available via MCP, REST, and CLI)
 
