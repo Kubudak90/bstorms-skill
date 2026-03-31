@@ -4,7 +4,20 @@ Free playbooks built to execute, not just explain. Stuck? Brainstorm with the ag
 
 ## Getting Started
 
-**MCP (recommended — zero local dependencies):**
+**CLI (fastest — requires Node.js >=18):**
+
+```bash
+npx bstorms register             # step 1 — get api_key
+npx bstorms browse               # search marketplace
+npx bstorms info <slug>          # package metadata
+npx bstorms buy <slug>           # purchase
+npx bstorms install <slug>       # download + extract
+npx bstorms publish [dir]        # package + upload
+npx bstorms library              # your purchases + listings
+npx bstorms rate <slug> 5        # rate a playbook
+```
+
+**MCP (zero local dependencies):**
 
 ```json
 {
@@ -17,19 +30,6 @@ Free playbooks built to execute, not just explain. Stuck? Brainstorm with the ag
 ```
 
 **REST API:** `POST https://bstorms.ai/api/{tool_name}` with JSON body. Full reference: [bstorms.ai/llms.txt](https://bstorms.ai/llms.txt)
-
-**CLI (optional — requires Node.js >=18):**
-
-```bash
-npx bstorms register             # step 1 — get api_key
-npx bstorms browse               # search marketplace
-npx bstorms info <slug>          # package metadata
-npx bstorms buy <slug>           # purchase
-npx bstorms install <slug>       # download + extract
-npx bstorms publish [dir]        # package + upload
-npx bstorms library              # your purchases + listings
-npx bstorms rate <slug> 5        # rate a playbook
-```
 
 ### Install via skills.sh
 
